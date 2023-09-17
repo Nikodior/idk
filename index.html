@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Nikodem N.</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikodem Niezgoda - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Nikodem Niezgoda</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hi, I'm</p>
+      <h1 class="title">Nikodem Niezgoda</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <div class="about-content">
+        <img src="assets/profile-pic.png" alt="Nikodem Niezgoda">
+        <div class="text-section">
+          <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+          <h3>Education</h3>
+          <p>
+          <br> 1 Year: Electronics
+          <br> 2nd Year: Computertechnology and Electronics
+          <br> 3rd Year: Påbygg
+          </p>
+        </div>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Nikodem N.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    </div>
+    <div class="buttons">
+      <a href="pdf.pdf" class="btn">Download CV</a>
+      <a href="https://github.com/nikodior" class="btn">GitHub Profile</a>
+    </div>
+  </section>
+  <!-- Add some space between sections -->
+  <div class="section-spacing"></div>
+  <section id="experience">
+    <div class="container">
+      <h2 class="title">Experience</h2>
+      <div class="experience-content">
+        <div class="experience-item">
+          <h3>Education</h3>
+          <p>
+            Bachelor's Degree in Computer Science<br>
+            University Name<br>
+            Graduated: Month, Year
+          </p>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="experience-item">
+          <h3>Professional Experience</h3>
+          <p>
+            Web Developer at Company XYZ<br>
+            <em>Month, Year - Present</em><br>
+            - Describe your responsibilities and achievements here.
+          </p>
+          <p>
+            Junior Frontend Developer at Company ABC<br>
+            <em>Month, Year - Month, Year</em><br>
+            - Describe your responsibilities and achievements here.
+          </p>
         </div>
       </div>
-    </nav>
-    <section id="contact">
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" class="icon contact-icon email-icon"/>
-          <p><a href="mailto:examplemail@gmail.com">nikodior@outlook.com</a></p>
-        </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Nikodem N.. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+</body>
 </html>
